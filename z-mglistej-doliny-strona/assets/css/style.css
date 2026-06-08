@@ -511,6 +511,7 @@ a {
    RESPONSYWNOŚĆ – wygląd na tabletach i telefonach
    ========================================================= */
 @media (max-width: 920px) {
+
     .nav {
         display: none;
     }
@@ -531,18 +532,15 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(90deg, rgba(15,13,10,.94) 0%, rgba(15,13,10,.72) 42%, rgba(15,13,10,.15) 100%),
-        url('../img/logo-z-mglistej-doliny.png') center right 5% / min(720px, 72vw) no-repeat;
-    opacity: .9;
-}
+    .hero::before{
+        background:
+            linear-gradient(90deg, rgba(15,13,10,.94) 0%, rgba(15,13,10,.72) 42%, rgba(15,13,10,.15) 100%),
+            url('../img/logo-z-mglistej-doliny.png')
+            center bottom / 55vw no-repeat;
+    }
 
-    .hero-content {
-        padding-top: 260px;
+    .hero-content{
+        padding-top: 40px;
     }
 }
 
@@ -1001,4 +999,27 @@ a {
     .slideshow{
         min-height:300px;
     }
+}
+
+@media (max-width: 920px){
+
+    .footer-grid{
+        text-align:center;
+    }
+
+    .footer-logos{
+        justify-content:center;
+    }
+
+    .social-links{
+        align-items:center;
+    }
+}
+
+@media (max-width: 560px){
+
+    .dog-main-photo{
+        height: 320px;
+    }
+
 }
