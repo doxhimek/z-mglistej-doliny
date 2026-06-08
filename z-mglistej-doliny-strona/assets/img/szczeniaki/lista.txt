@@ -1,0 +1,7 @@
+# Tutaj wpisujesz zdjęcia szczeniaków. Najnowsze dopisuj na dole.
+# Ostatnie zdjęcie z listy będzie zdjęciem głównym.
+1.jpg|Matka - Becky
+2.jpg|Matka - Becky
+3.jpg|Piesek
+4.jpg|Piesek
+5.jpg|Brat i siostra

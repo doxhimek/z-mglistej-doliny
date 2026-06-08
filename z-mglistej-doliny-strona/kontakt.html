@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- PODSTAWOWE USTAWIENIA STRONY -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: opis podstrony w Google. Na każdej podstronie możesz dać inny opis. -->
+    <meta name="description" content="Hodowla owczarków niemieckich FCI Z Mglistej Doliny. Rodowodowe szczenięta, stabilny charakter, socjalizacja i okolice Krakowa.">
+
+    <!-- TYTUŁ W KARCIE PRZEGLĄDARKI -->
+    <title>Z Mglistej Doliny FCI</title>
+
+    <!-- PODŁĄCZENIE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         GÓRNY PASEK STRONY
+         Logo prowadzi do index.html, czyli do strony głównej.
+         ========================================================= -->
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="index.html" class="logo-link" aria-label="Powrót na stronę główną">
+                <img src="assets/img/logo-z-mglistej-doliny.png" alt="Logo Z Mglistej Doliny FCI" class="logo">
+                <span>
+                    <span class="brand-small">Hodowla FCI</span>
+                    <span class="brand-name">Z Mglistej Doliny</span>
+                </span>
+            </a>
+
+            <!-- MENU NA KOMPUTERZE -->
+            <nav class="nav" aria-label="Menu główne">
+                <a href="index.html" class="">Strona główna</a>
+                <a href="o-hodowli.html" class="">O hodowli</a>
+                <a href="o-rasie.html" class="">O rasie</a>
+                <a href="psy.html" class="">Nasze psy</a>
+                <a href="mioty.html" class="">Szczeniaki</a>
+                <a href="galeria.html" class="">Galeria</a>
+            </nav>
+
+            <!-- MENU HAMBURGER NA TELEFONIE -->
+            <button class="menu-btn" onclick="openMenu()" aria-label="Otwórz menu">☰</button>
+        </div>
+    </header>
+
+    <!-- CIEMNE TŁO PO OTWARCIU MENU MOBILNEGO -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- MENU BOCZNE NA TELEFONIE -->
+    <aside id="mobileMenu" class="mobile-menu" aria-label="Menu mobilne">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Zamknij menu">&times;</button>
+        <br><br>
+        <a href="index.html">Strona główna</a>
+        <a href="o-hodowli.html">O hodowli</a>
+        <a href="o-rasie.html">O rasie</a>
+        <a href="psy.html">Nasze psy</a>
+        <a href="mioty.html">Szczeniaki</a>
+        <a href="galeria.html">Galeria</a>
+    </aside>
+
+    <main>
+        <!-- =========================================================
+             KONTAKT
+             Górne dwa boxy prowadzą do social mediów.
+             Dolny szeroki box zawiera pełne dane kontaktowe.
+             ========================================================= -->
+        <section class="section">
+            <div class="container">
+
+                <!-- DANE KONTAKTOWE -->
+                <article class="card contact-main-box">
+                    <h3>Dane kontaktowe</h3>
+
+                    <p><strong>E-mail:</strong> <a href="mailto:zmglistejdolinyfci@outlook.com">zmglistejdolinyfci@outlook.com</a></p>
+                    <p><strong>Tel.:</strong> <a href="tel:+48723546495">723 546 495</a></p>
+                    <p><strong>Adres:</strong> Paczółtowice 250, 32-065 Krzeszowice</p>
+                </article>
+
+<!-- FACEBOOK -->
+<article class="card contact-social-card">
+
+    <h3>Facebook</h3>
+
+    <p>
+        Aktualności z życia hodowli, zdjęcia psów,
+        planowane mioty oraz informacje o szczeniętach.
+    </p>
+
+    <a href="https://facebook.com/TWOJ_PROFIL"
+       target="_blank"
+       class="btn">
+        📘 Odwiedź Facebook
+    </a>
+
+</article>
+
+<!-- INSTAGRAM -->
+<article class="card contact-social-card">
+
+    <h3>Instagram</h3>
+
+    <p>
+        Zdjęcia, relacje oraz codzienne życie
+        naszych owczarków niemieckich.
+    </p>
+
+    <a href="https://instagram.com/TWOJ_PROFIL"
+       target="_blank"
+       class="btn">
+        📷 Odwiedź Instagram
+    </a>
+
+</article>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================
+         STOPKA STRONY
+         Tutaj zmieniasz telefon, email, adres, linki i copyright.
+         ========================================================= -->
+    <footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>Z Mglistej Doliny FCI</h3>
+
+            <div class="footer-logos">
+                <img src="assets/img/fci-logo.png" alt="FCI">
+                <img src="assets/img/zkwp-logo.png" alt="ZKwP">
+            </div>
+        </div>
+
+        <div>
+            <h4>Kontakt z hodowlą</h4>
+            <p>
+                Masz pytania o planowane mioty, rezerwację szczeniaka
+                lub naszą hodowlę? Skontaktuj się z nami telefonicznie
+                lub mailowo.
+            </p>
+        </div>
+
+        <div>
+            <h4>Informacje</h4>
+            <p>
+                Najszybciej odpowiadamy telefonicznie. Jeżeli nie odbieramy,
+                prosimy o wiadomość SMS lub e-mail — oddzwonimy najszybciej
+                jak to możliwe.
+            </p>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        © 2026 Z Mglistej Doliny FCI. Wszystkie prawa zastrzeżone.
+    </div>
+</footer>
+
+    <!-- PODŁĄCZENIE JAVASCRIPTU -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

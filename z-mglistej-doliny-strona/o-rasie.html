@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- PODSTAWOWE USTAWIENIA STRONY -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: opis podstrony w Google. Na każdej podstronie możesz dać inny opis. -->
+    <meta name="description" content="Hodowla owczarków niemieckich FCI Z Mglistej Doliny. Rodowodowe szczenięta, stabilny charakter, socjalizacja i okolice Krakowa.">
+
+    <!-- TYTUŁ W KARCIE PRZEGLĄDARKI -->
+    <title>Z Mglistej Doliny FCI</title>
+
+    <!-- PODŁĄCZENIE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         GÓRNY PASEK STRONY
+         Logo prowadzi do index.html, czyli do strony głównej.
+         ========================================================= -->
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="index.html" class="logo-link" aria-label="Powrót na stronę główną">
+                <img src="assets/img/logo-z-mglistej-doliny.png" alt="Logo Z Mglistej Doliny FCI" class="logo">
+                <span>
+                    <span class="brand-small">Hodowla FCI</span>
+                    <span class="brand-name">Z Mglistej Doliny</span>
+                </span>
+            </a>
+
+            <!-- MENU NA KOMPUTERZE -->
+            <nav class="nav" aria-label="Menu główne">
+                <a href="index.html" class="">Strona główna</a>
+                <a href="o-hodowli.html" class="">O hodowli</a>
+                <a href="o-rasie.html" class="active">O rasie</a>
+                <a href="psy.html" class="">Nasze psy</a>
+                <a href="mioty.html" class="">Szczeniaki</a>
+                <a href="galeria.html" class="">Galeria</a>
+            </nav>
+
+            <!-- MENU HAMBURGER NA TELEFONIE -->
+            <button class="menu-btn" onclick="openMenu()" aria-label="Otwórz menu">☰</button>
+        </div>
+    </header>
+
+    <!-- CIEMNE TŁO PO OTWARCIU MENU MOBILNEGO -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- MENU BOCZNE NA TELEFONIE -->
+    <aside id="mobileMenu" class="mobile-menu" aria-label="Menu mobilne">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Zamknij menu">&times;</button>
+        <br><br>
+        <a href="index.html">Strona główna</a>
+        <a href="o-hodowli.html">O hodowli</a>
+        <a href="o-rasie.html">O rasie</a>
+        <a href="psy.html">Nasze psy</a>
+        <a href="mioty.html">Szczeniaki</a>
+        <a href="galeria.html">Galeria</a>
+    </aside>
+
+    <main>
+
+    <!-- HERO O RASIE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Owczarek Niemiecki</h1>
+            <p>
+                Inteligentny, odważny i niezwykle oddany człowiekowi.
+                Jedna z najbardziej wszechstronnych ras psów na świecie.
+            </p>
+        </div>
+    </section>
+
+    <!-- GŁÓWNA TREŚĆ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="grid-2">
+
+                <article class="card">
+                    <h3>Wyjątkowy charakter</h3>
+
+                    <p>
+                        Owczarek niemiecki od pokoleń zachwyca inteligencją,
+                        lojalnością oraz ogromną chęcią współpracy z człowiekiem.
+                        To pies, który mocno przywiązuje się do swojej rodziny
+                        i chętnie uczestniczy w codziennym życiu domowników.
+                    </p>
+
+                    <p>
+                        Odpowiednio prowadzony jest zrównoważony,
+                        pewny siebie i niezwykle oddany swoim opiekunom.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Dla kogo jest ta rasa?</h3>
+
+                    <p>
+                        Owczarek niemiecki najlepiej odnajduje się u osób,
+                        które chcą aktywnie spędzać czas ze swoim psem
+                        i budować z nim silną więź.
+                    </p>
+
+                    <p>
+                        Doskonale sprawdza się zarówno jako pies rodzinny,
+                        jak i partner do szkolenia, sportu czy wspólnych aktywności.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Wszechstronność</h3>
+
+                    <p>
+                        To jedna z niewielu ras wykorzystywanych jednocześnie
+                        w służbach mundurowych, ratownictwie,
+                        sportach kynologicznych oraz jako psy rodzinne.
+                    </p>
+
+                    <p>
+                        Inteligencja i gotowość do pracy sprawiają,
+                        że owczarek niemiecki od lat pozostaje symbolem psa użytkowego.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Długowłosy i krótkowłosy</h3>
+
+                    <p>
+                        Rasa występuje w dwóch odmianach szaty:
+                        długowłosej oraz krótkowłosej.
+                    </p>
+
+                    <p>
+                        Obie odmiany posiadają ten sam charakter,
+                        temperament oraz cechy użytkowe.
+                        Różnią się przede wszystkim wyglądem okrywy włosowej.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DOLNY CYTAT -->
+    <section class="section">
+        <div class="container">
+
+            <article class="card" style="text-align:center; border:2px solid var(--gold);">
+                <h2 class="gold">Dlaczego kochamy tę rasę?</h2>
+
+                <p style="font-size:20px;">
+                    Owczarek niemiecki to nie tylko pies.
+                    To wierny przyjaciel, obrońca rodziny i partner,
+                    który każdego dnia pokazuje swoją inteligencję,
+                    odwagę oraz bezgraniczne oddanie człowiekowi.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+    <!-- =========================================================
+         STOPKA STRONY
+         Tutaj zmieniasz telefon, email, adres, linki i copyright.
+         ========================================================= -->
+    <footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>Z Mglistej Doliny FCI</h3>
+
+            <div class="footer-logos">
+                <img src="assets/img/fci-logo.png" alt="FCI">
+                <img src="assets/img/zkwp-logo.png" alt="ZKwP">
+            </div>
+        </div>
+
+        <div>
+            <h4>Kontakt</h4>
+
+                <p>
+                    <strong>E-mail:</strong><br>
+                        <a href="mailto:zmglistejdolinyfci@outlook.com">
+                            zmglistejdolinyfci@outlook.com
+                        </a>
+                </p>
+
+                <p>
+                    <strong>Tel.:</strong><br>
+                        <a href="tel:+48723546495">
+                            723 546 495
+                        </a>
+                </p>
+
+                <p>
+                    <strong>Adres:</strong><br>
+                    Paczółtowice 250, 32-065 Krzeszowice<br>
+                </p>
+        </div>
+         <div>
+            <h4>Media</h4>
+
+                <div class="social-links">
+
+                <a href="https://facebook.com/TWOJ_PROFIL"
+                target="_blank"
+                class="social-btn">
+
+                 📘 Facebook
+
+                </a>
+
+                <a href="https://instagram.com/TWOJ_PROFIL"
+                 target="_blank"
+                class="social-btn">
+
+                📷 Instagram
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        © 2026 Z Mglistej Doliny FCI. Wszystkie prawa zastrzeżone.
+    </div>
+</footer>
+
+    <!-- PODŁĄCZENIE JAVASCRIPTU -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Tutaj wpisujesz zdjęcia do slajdera na stronie głównej. Kolejność jest normalna.
+# Przykład:
+1.jpg|Zdjęcie hodowli
+2.jpg|Kendy i Kami z Rodu Spajka
+3.jpg|Kendy
+4.jpg|Becky Team of hope

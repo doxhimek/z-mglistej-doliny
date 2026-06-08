@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- PODSTAWOWE USTAWIENIA STRONY -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: opis podstrony w Google. Na każdej podstronie możesz dać inny opis. -->
+    <meta name="description" content="Hodowla owczarków niemieckich FCI Z Mglistej Doliny. Rodowodowe szczenięta, stabilny charakter, socjalizacja i okolice Krakowa.">
+
+    <!-- TYTUŁ W KARCIE PRZEGLĄDARKI -->
+    <title>Z Mglistej Doliny FCI</title>
+
+    <!-- PODŁĄCZENIE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         GÓRNY PASEK STRONY
+         Logo prowadzi do index.html, czyli do strony głównej.
+         ========================================================= -->
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="index.html" class="logo-link" aria-label="Powrót na stronę główną">
+                <img src="assets/img/logo-z-mglistej-doliny.png" alt="Logo Z Mglistej Doliny FCI" class="logo">
+                <span>
+                    <span class="brand-small">Hodowla FCI</span>
+                    <span class="brand-name">Z Mglistej Doliny</span>
+                </span>
+            </a>
+
+            <!-- MENU NA KOMPUTERZE -->
+            <nav class="nav" aria-label="Menu główne">
+                <a href="index.html" class="active">Strona główna</a>
+                <a href="o-hodowli.html" class="">O hodowli</a>
+                <a href="o-rasie.html" class="">O rasie</a>
+                <a href="psy.html" class="">Nasze psy</a>
+                <a href="mioty.html" class="">Szczeniaki</a>
+                <a href="galeria.html" class="">Galeria</a>
+            </nav>
+
+            <!-- MENU HAMBURGER NA TELEFONIE -->
+            <button class="menu-btn" onclick="openMenu()" aria-label="Otwórz menu">☰</button>
+        </div>
+    </header>
+
+    <!-- CIEMNE TŁO PO OTWARCIU MENU MOBILNEGO -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- MENU BOCZNE NA TELEFONIE -->
+    <aside id="mobileMenu" class="mobile-menu" aria-label="Menu mobilne">
+        <button class="close-btn" onclick="closeMenu()" aria-label="Zamknij menu">&times;</button>
+        <br><br>
+        <a href="index.html">Strona główna</a>
+        <a href="o-hodowli.html">O hodowli</a>
+        <a href="o-rasie.html">O rasie</a>
+        <a href="psy.html">Nasze psy</a>
+        <a href="mioty.html">Szczeniaki</a>
+        <a href="galeria.html">Galeria</a>
+    </aside>
+
+    <!-- =========================================================
+         HERO / BANER GŁÓWNY
+         Tu zmieniasz główne hasło strony i przyciski.
+         ========================================================= -->
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="kicker">Owczarki niemieckie FCI</span>
+                <h1>Z Mglistej Doliny</h1>
+                <p>Rodzinna hodowla owczarków niemieckich długowłosych i krótkowłosych. Psy o mocnej budowie, stabilnym charakterze i świetnej socjalizacji.</p>
+                <div class="hero-actions">
+                    <a href="mioty.html" class="btn btn-primary">Zobacz szczeniaki</a>
+                    <a href="kontakt.html" class="btn btn-secondary">Skontaktuj się</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             KRÓTKIE ATUTY HODOWLI
+             Każdy .card to osobny kafelek. Możesz zmienić teksty.
+             ========================================================= -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Nasze priorytety</h2>
+                <p class="section-lead">Prowadzimy niewielką hodowlę, dzięki czemu możemy poświęcić psom i szczeniętom dużo czasu.</p>
+                <div class="grid-3">
+                    <article class="card">
+                        <h3>Charakter</h3>
+                        <p>Stawiamy na pewne siebie, zrównoważone psy gotowe do życia z rodziną.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Socjalizacja</h3>
+                        <p>Szczenięta od początku poznają dom, ludzi, dźwięki i codzienne sytuacje.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Rodowód FCI</h3>
+                        <p>Wszystkie mioty pochodzą z rodowodowych skojarzeń FCI / ZKwP.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             O HODOWLI – wersja skrócona na stronie głównej
+             Pełny opis możesz dać w pliku o-hodowli.html.
+             ========================================================= -->
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <span class="kicker">O nas</span>
+                    <h2 class="section-title">Mała hodowla, duża odpowiedzialność</h2>
+                    <p class="section-lead">Nasza hodowla jest niewielka, dzięki czemu każdemu psu i każdemu miotowi możemy poświęcić maksymalną uwagę.</p>
+                    <ul class="feature-list">
+                        <li>Dobór skojarzeń pod zdrowie, charakter i typ rasy.</li>
+                        <li>Bliski kontakt szczeniąt z człowiekiem od pierwszych dni.</li>
+                        <li>Przygotowanie maluchów do życia jako psy rodzinne i sportowe.</li>
+                    </ul>
+                </div>
+                <div class="showcase-logo slideshow" id="homeSlideshow">
+                    <p class="empty-gallery-message">Zdjęcia wczytują się...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================
+         STOPKA STRONY
+         Tutaj zmieniasz telefon, email, adres, linki i copyright.
+         ========================================================= -->
+    <footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>Z Mglistej Doliny FCI</h3>
+
+            <div class="footer-logos">
+                <img src="assets/img/fci-logo.png" alt="FCI">
+                <img src="assets/img/zkwp-logo.png" alt="ZKwP">
+            </div>
+        </div>
+
+        <div>
+            <h4>Kontakt</h4>
+
+                <p>
+                    <strong>E-mail:</strong><br>
+                        <a href="mailto:zmglistejdolinyfci@outlook.com">
+                            zmglistejdolinyfci@outlook.com
+                        </a>
+                </p>
+
+                <p>
+                    <strong>Tel.:</strong><br>
+                        <a href="tel:+48723546495">
+                            723 546 495
+                        </a>
+                </p>
+
+                <p>
+                    <strong>Adres:</strong><br>
+                    Paczółtowice 250, 32-065 Krzeszowice<br>
+                </p>
+        </div>
+         <div>
+            <h4>Media</h4>
+
+                <div class="social-links">
+
+                <a href="https://facebook.com/TWOJ_PROFIL"
+                target="_blank"
+                class="social-btn">
+
+                 📘 Facebook
+
+                </a>
+
+                <a href="https://instagram.com/TWOJ_PROFIL"
+                 target="_blank"
+                class="social-btn">
+
+                📷 Instagram
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        © 2026 Z Mglistej Doliny FCI. Wszystkie prawa zastrzeżone.
+    </div>
+</footer>
+
+    <!-- PODŁĄCZENIE JAVASCRIPTU -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

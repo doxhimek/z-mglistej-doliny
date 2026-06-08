@@ -1,0 +1,5 @@
+# Tutaj wpisujesz zdjęcia do zakładki Galeria. Najnowsze dopisuj na dole.
+# Na stronie pokażą się od końca, czyli najnowsze będą pierwsze.
+1.jpg|Nasze owczarki na spacerze
+2.jpg|Brat i siostra
+3.jpg|Kendy z Rodu Spajka
