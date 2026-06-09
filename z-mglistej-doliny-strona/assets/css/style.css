@@ -533,10 +533,7 @@ a {
     }
 
     .hero::before{
-        background:
-            linear-gradient(90deg, rgba(15,13,10,.94) 0%, rgba(15,13,10,.72) 42%, rgba(15,13,10,.15) 100%),
-            url('../img/logo-z-mglistej-doliny.png')
-            center bottom / 55vw no-repeat;
+        display:none;
     }
 
     .hero-content{
